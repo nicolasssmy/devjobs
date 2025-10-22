@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>DevJobs</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.svg" alt="icon">
+            <h4>DevJobs</h4>
+        </div>
+        <ul>
+            <li><a href="./empleos.html">Buscar</a></li>
+            <li><a href="./empleos.html">Empleos</a></li>
+            <li><a href="./empleos.html">Empresas</a></li>
+            <li><a href="#">Salarios</a></li>
+        </ul>
+        <div class="iniciar">
+            <button>Publicar un Empleos</button>
+            <button>Iniciar Sesion</button>
+        </div>
+    </nav>
+    <main>
+        <img class="heroImage" src="https://web-static.wrike.com/blog/content/uploads/2020/11/A-Guide-To-Managing-Agile-Meetings-2.jpg" alt="hero">
+        <section class="hero">
+            <h1>Encuetra el trabajo de tus sueños</h1>
+            <p>Unete a la comunidad mas grande de desarrolladores y encuentra tu proxima <br> oportunidad</p>
+
+            <form action="">
+                <img src="./assets/search.svg" alt="search">
+                <input name="enter" type="text" placeholder="Buscar empleo por titulo, habilidad o empresa">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        
+        <section class="devjobs">
+            <header>
+                <h2>Porque DevJobs?</h2>
+                <p>DevJobs es la principal bolsa de trabajo para desarrolladores. Conectamos a los desarrolladores en las mejores empresas del mundo</p>
+            </header>
+
+            <div class="recuadro">
+                <div>
+                    <div class="images">
+                        <img src="./assets/bag.svg" alt="img">
+                    </div>
+                    <h3>Encuentra el trabajo de tus sueños</h3>
+                    <p>Busca miles de empleos de las mejores empresas de todo el mundo.</p>
+                </div>
+                <div>
+                    <div class="images">
+                        <img src="./assets/users.svg" alt="img">
+                    </div>
+                    <h3>Conecta con las mejores empresas</h3>
+                    <p>Conecta con empresas que estan contratando por tus habilidades.</p>
+                </div>
+                <div>
+                    <div class="images">
+                        <img src="./assets/buiding.svg" alt="img">
+                    </div>
+                    <h3>Obten el salario que mereces</h3>
+                    <p>Obten el salario que mereces con nuestra calculadora de salarios.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy  2025 DevJobs. Todos los derechos reservados.
+    </footer>
+
+</body>
+<script>
+    const form = document.querySelector('form')
+    
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
+        const formData = new FormData(form)
+        const { enter } = Object.fromEntries(formData.entries())
+        console.log(enter)
+        console.log()
+        //TODO: llamada a la api
+    })
+
+    const nav = document.querySelector('nav')
+
+    document.addEventListener('scroll', () => {
+        
+    })
+
+</script>
+</html>

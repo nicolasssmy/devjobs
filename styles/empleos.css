@@ -1,0 +1,93 @@
+.main {
+    padding-inline: 20%;
+}
+
+.avatar {
+    display: flex;
+    gap: 20px;
+}
+
+.avatar img {
+    height: 45px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.avatar button {
+    background-color: #103458;
+    color: #1173D4;
+}
+
+.avatar button:hover {
+    filter: brightness(1.2);
+}
+
+form {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 100%;
+    padding: 0;
+}
+
+form input {
+    width: 100%;
+    background-color: #242D3A;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #3b4550;
+}
+
+input:focus {
+    outline: 1px solid #3b4550;
+}
+
+.filters {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    margin-top: .75rem;
+}
+
+select {
+    padding: 10px 10px;
+    border-radius: 8px;
+    background-color: #242D3A;
+    color: white;
+    border: 0;
+}
+
+.resultados {
+    margin-top: 1.7rem;
+    border: 1px solid #3b4550;
+    border-radius: 10px;
+}
+
+.oferta-empleo {
+    padding: 1.8rem 2.3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.oferta-empleo + .oferta-empleo {
+    border-top: 1px solid #3b4550;
+}
+
+.oferta-empleo span {
+    font-size: 13px;
+    color: #bdbdbd;
+}
+
+.oferta-empleo p {
+    padding-top: .8rem;
+    color: #e0e0e0;
+}
+
+.oferta-empleo button {
+    padding: 10px 20px;
+    font-size: .95rem;
+    font-weight: 700;
+    color: white;
+    background-color: #1173D4;
+}
