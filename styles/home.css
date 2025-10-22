@@ -6,6 +6,7 @@
 
 .iniciar button + button {
     background-color: #475569;
+    color: white;
 }
 
 .iniciar button:first-child {
@@ -15,6 +16,10 @@
 
 .iniciar button:hover {
     filter: brightness(1.1);
+}
+
+.iniciar a {
+    color: #1173D4;
 }
 
 button:active {

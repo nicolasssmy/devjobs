@@ -1,0 +1,82 @@
+.navbar {
+    margin-bottom: 75px;
+}
+
+.avatar {
+    align-items: center;
+}
+
+.avatar > div {
+    background-color: #242D3A;
+    display: flex;
+    height: 35px;
+    padding-inline: 10px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.avatar > div img {
+    width: 20px;
+}
+
+.avatar input {
+    background-color: transparent;
+}
+
+.avatar input::placeholder {
+    font-size: 16px;
+}
+
+p {
+    color: #cbd5e1;
+}
+
+span {
+    margin-left: 20%;
+    color: #bdbdbd;
+}
+
+main {
+    margin-inline: 25%;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+article ul{
+    list-style: none;
+    margin: 20px 0;
+}
+
+article li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+article footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+footer button {
+    padding: 10px 20px;
+    font-size: .95rem;
+    font-weight: 700;
+    color: white;
+    background-color: #1173D4;
+}
+
+button:active {
+    transform: scale(.95);
+}

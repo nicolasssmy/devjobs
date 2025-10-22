@@ -22,21 +22,25 @@
     filter: brightness(1.2);
 }
 
+main {
+    margin-top: 130px;
+}
+
 header { 
     text-align: center;
     margin-top: 35px;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 h1 + p {
     text-wrap: balance;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
     color: #94a3b8;
 }
 
@@ -68,17 +72,18 @@ form:focus {
     outline: 1px solid #3b4550;
 }
 
-.filters {
+.filtros {
     align-self: flex-start;
-    margin-bottom: 2rem;
-    margin-top: .75rem;
+    margin-bottom: 32px;
+    margin-top: 12px;
 }
 
 select {
     padding: 10px 10px;
+    margin-right: 10px;
     border-radius: 8px;
     background-color: #242D3A;
-    color: white;
+    color: #94a3b8;
     border: 0;
 }
 
@@ -144,9 +149,16 @@ button:active {
     background-color: transparent;
     color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
-.paginacion li:hover {
+.paginacion a {
+    display: block;
+    padding: 8px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.paginacion li:hover:not(.pagina-actual) {
     background-color: #1173D4;
 }
