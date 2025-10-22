@@ -22,8 +22,25 @@
     filter: brightness(1.2);
 }
 
+header { 
+    text-align: center;
+    margin-top: 35px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 + p {
+    text-wrap: balance;
+    margin-bottom: 3rem;
+    color: #94a3b8;
+}
+
 form {
-    background-color: transparent;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -31,15 +48,23 @@ form {
     padding: 0;
 }
 
+.search {
+    display: flex;
+    background-color: #242D3A;
+    border-radius: 8px;
+    border: 1px solid #3b4550;
+    padding: 0.8rem;
+}
+
 form input {
     width: 100%;
     background-color: #242D3A;
-    padding: 0.8rem;
-    border-radius: 8px;
-    border: 1px solid #3b4550;
+    color: white;
+    margin-left: 15px;
 }
 
-input:focus {
+
+form:focus {
     outline: 1px solid #3b4550;
 }
 
@@ -89,5 +114,39 @@ select {
     font-size: .95rem;
     font-weight: 700;
     color: white;
+    background-color: #1173D4;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+.paginacion ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    margin-top: 3rem;
+    list-style: none;
+    align-items: center;
+}
+
+.paginacion li {
+    padding: 3px;
+    border-radius: 8px;
+    transition: background-color .2s ;
+}
+
+.paginacion .pagina-actual {
+    background-color: #0099ff;
+}
+
+.paginacion button {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.paginacion li:hover {
     background-color: #1173D4;
 }
